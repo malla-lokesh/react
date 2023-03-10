@@ -1,7 +1,7 @@
 import ExpenseItem from "./ExpenseItem"
 import './Expenses.css'
 import Card from "../UI/Card"
-import ExpenseForm from "./ExpenseForm"
+import NewExpense from "./NewExpense"
 
 const Expenses = () => {
     const expenses = [
@@ -38,7 +38,7 @@ const Expenses = () => {
     return(
         <Card className="expenses">
             <h2>Expense Items:</h2>
-            <ExpenseForm/>
+            <NewExpense/>
             {
                 expenses.map((expense) => (
                     <ExpenseItem 
